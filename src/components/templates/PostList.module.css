@@ -1,0 +1,50 @@
+.list h3 {
+    margin: 30px 0 30px;
+    border-bottom: 3px solid #a62626;
+    width: fit-content;
+    padding-bottom: 5px;
+}
+.post{
+    display: flex;
+    align-items: center;
+    border: 2px solid #eaeaea;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 5px;
+}
+.post img {
+    width: 100px;
+    height: 70px;
+    border-radius: 3px;
+    margin-left: 30px;
+}
+.post div{
+    width: 100%;
+}
+.post p{
+    font-size: 0.9rem;
+}
+.post span{
+    font-size: 0.8rem;
+    color: gray;
+}
+.post .price{
+    width: 150px;
+    text-align: center;
+}
+.list button{
+    background-color: #a62626;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.list .deleteLoading{
+    color: #a62626;
+    text-align: center;
+    border-radius: 3px;
+    padding: 8px;
+}
