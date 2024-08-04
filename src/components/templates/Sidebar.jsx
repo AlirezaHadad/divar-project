@@ -1,21 +1,22 @@
 import styles from "./Sidebar.module.css"
 
-const Sidebar = ({categories,SetSlug,slug}) => {
+const Sidebar = ({categories,SetId}) => {
 
-    const categoeyHandler = (slug) =>{
-        const slugcategory = slug
-        SetSlug(slugcategory)
+    const categoeyHandler = (id) =>{
+        console.log(id);
+        
+        SetId(id)
     }
 
     return(
         <div className={styles.sidebar}>
             <h3>دسته بندی ها</h3>
             <ul>
-                <li>
+                <li onClick={()=>SetId("")}>
                     <p>همه</p>
                 </li>
                 {categories?.data.map((category)=>(
-                    <div onClick={()=>categoeyHandler(category.slug)}>
+                    <div onClick={()=>categoeyHandler(category._id)}>
                         <li key={category._id}>
                             <img src={`${category.icon}.svg`} />
                             <p>{category.name}</p>
