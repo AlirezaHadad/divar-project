@@ -10,10 +10,11 @@ const PostList = () => {
     const queryClient = useQueryClient()
 
     const {data,isFetching} = useQuery(["My_Post-List"],getposts)
-    console.log(data);
+
     const {mutate , data : deletePostData , isLoading} = useMutation(deletePost,{
         onSuccess: ()=> queryClient.invalidateQueries("My_Post-List")
     }) 
+    
     const deleteHandler = (id) =>{
         mutate(id)
     }

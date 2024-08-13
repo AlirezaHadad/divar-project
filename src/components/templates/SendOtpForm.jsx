@@ -23,6 +23,7 @@ const SendOtpForm = ({mobile,setMobile,setStep}) => {
             <form onSubmit={submitHandler} className={styles.from}>
                 <p>ورود به حساب کاربری</p>
                 <span>برای استفاده از امکانات دیوار ، لطفا شماره موبایل خود را وارد کنید. کد تایید به این شماره پیامک خواهد شد.</span>
+                <span>*برای دریافت رمز و ورود به پنل ادمین - کاربر باید بک اندی که گیت هاب گذاشته شده استفاده کنید</span>
                 <label htmlFor="input">شماره موبایل خود را وارد بکنید.</label>
                 <input type="text" id="input" placeholder="شماره موبایل" value={mobile} onChange={e => setMobile(e.target.value)} />
                 <button type="submit">ارسال کد تایید</button>
